@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <button onclick="brownTrash()">Trash</button>
+<p id="demo">Your score is</p>
+    <button onclick="blueTrash()">Recycle(blue)</button>
+    <button onclick="greenTrash()">Recylce(green)</button>
+</body>
+    <script>
+            var score=0;
+    var type=prompt("What kind of trash do you have?");
+    document.getElementById("demo").innerHTML ="Your score is "+score;
+    
+
+function brownTrash() {
+  if (type =="brown trash"||type=="Brown trash") {
+    document.getElementById("demo").innerHTML =
+    "Good job you threw out the trash ";
+      score++;
+  }
+    else{    
+       document.getElementById("demo").innerHTML =
+    "You threw it in the wrong bin";
+    score--;
+        
+    }
+}
+
+function greenTrash() {
+  if (type =="green trash"||type=="Green trash") {
+    document.getElementById("demo").innerHTML =
+    "You recycled good job";
+      score++;
+  }
+    else{
+            document.getElementById("demo").innerHTML =
+    "You threw it in the wrong bin";
+    score--;
+        
+    }
+}
+
+
+function blueTrash() {
+  if (type =="blue trash"||type=="Blue trash") {
+    document.getElementById("demo").innerHTML =
+    "You recycled good job";
+      score++;
+  }
+    else{
+            document.getElementById("demo").innerHTML =
+    "You threw it in the wrong bin"";
+    score--;
+        
+    }
+}
+    if(score==5){
+            document.getElementById("demo").innerHTML =
+    "Amazing you are helping the environment";
+    }
+    </script>
+</html>
